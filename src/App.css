@@ -80,7 +80,8 @@ cursor: pointer;
 .deleteImg:hover{opacity: .7;}
 button{border-radius: 4px;padding: 10px 20px; }
 .task{margin-top: 40px;border: 1px solid gray;padding: 20px;}
-.task div{width: 25%;}
+.task div{width: 26.6%;}
+.task div:last-child,.task div:first-child{width: 10%;}
 .textContainer,.task{text-align: center;}
 .cardTitle{margin-bottom: 20px;color: green;}
 .textContainer button{padding: 5px 20px;background-color: red; color: #ffffff;font-weight: 500;border: none;cursor: pointer;}
