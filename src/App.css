@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+.container {
+  max-width: 450px;
+  margin: 50px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.timerBox {
+  background: linear-gradient(90deg, #b43f7f, #82777d);
+  padding: 20px 0;
+  color: #ffffff;
+  font-size: 35px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 6rem;
 }
 
-.App-link {
-  color: #61dafb;
+.buttonBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttonBox button {
+  padding: 5px 20px;
 }
+
+.popUp {
+  background: rgb(0, 0, 0, .7);
+  z-index: 90;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blankPopUpTextBox{background-color: wheat;width: 500px;height: 300px;position: relative;}
+
+
+.blankPopUpTextBox .closeIconBox {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.closeIconBox::before,
+.closeIconBox:after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: black;
+  height: 15px;
+  transform: rotate(45deg);
+  right: 0;
+}
+
+.closeIconBox:after {
+  transform: rotate(-45deg);
+}
+.deleteImg{width: 15px;
+  height: 20px;
+cursor: pointer;
+
+}
+.deleteImg:hover{opacity: .7;}
+button{border-radius: 4px;padding: 10px 20px; }
+.task{margin-top: 40px;border: 1px solid gray;padding: 20px;}
+.textContainer,.task{text-align: center;}
+.cardTitle{margin-bottom: 20px;color: green;}
+.textContainer button{padding: 5px 20px;background-color: red; color: #ffffff;font-weight: 500;border: none;cursor: pointer;}
+.textContainer button:hover,.closeIconBox:hover{opacity: .5; }
+.textContainer button.saveBtn{background-color: rgb(80, 196, 80) !important;margin-right: 20px;}
+.inputGroup{display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;}
+  .inputGroup input{border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 10px;}
+    .title, .time{font-weight: 500;}
+    .time{color: red;}
+   .taskDetailBox{display: flex;flex-direction: row;width: 100%;justify-content: space-between;margin-bottom: 10px;}
