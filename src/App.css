@@ -95,4 +95,4 @@ button{border-radius: 4px;padding: 10px 20px; }
     .title, .time{font-weight: 500;}
     .time{color: red;}
    .taskDetailBox{display: flex;flex-direction: row;width: 100%;justify-content: space-between;margin-bottom: 10px;}
-.taskDetailBox div{width: 20%;}
+.taskDetailBox div{width: 20%;text-align: left;}
